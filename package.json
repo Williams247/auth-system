@@ -5,6 +5,16 @@
   "main": "server.ts",
   "author": "Williams Alex",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/server.ts",
+    "build": "yarn install && tsc",
+    "start": "node ./build/server.js",
+    "generate": "npx tsc",
+    "tsc:init": "tsc --init"
+  },
+  "_moduleAliases": {
+    "@services": "./src/services"
+  },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/dotenv": "^8.2.0",
