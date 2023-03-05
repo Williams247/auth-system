@@ -13,7 +13,12 @@
     "tsc:init": "tsc --init"
   },
   "_moduleAliases": {
-    "@services": "./src/services"
+    "@services": "./src/services",
+    "@utils": "./src/utils",
+    "@controllers": "./src/controllers",
+    "@models": "./src/models",
+    "@middlewares": "./src/middlewares",
+    "@routes": "./src/routes"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
